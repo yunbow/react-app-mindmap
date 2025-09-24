@@ -1,0 +1,45 @@
+.savedMapsList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.savedMapItem {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: var(--color-muted);
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
+  border: 1px solid transparent;
+}
+
+.savedMapItem:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-border);
+}
+
+.mapInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mapName {
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: var(--color-foreground);
+}
+
+.mapDate {
+  font-size: 12px;
+  color: var(--color-muted-foreground);
+}
+
+.deleteButton {
+  margin-left: 10px;
+  padding: 4px 8px;
+  font-size: 12px;
+}

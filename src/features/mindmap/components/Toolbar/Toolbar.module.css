@@ -1,0 +1,9 @@
+.toolbar {
+  background-color: var(--color-card);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}

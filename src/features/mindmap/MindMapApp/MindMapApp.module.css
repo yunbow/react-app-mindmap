@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}

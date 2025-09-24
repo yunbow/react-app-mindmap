@@ -1,0 +1,44 @@
+.node {
+  position: absolute;
+  background-color: var(--color-muted);
+  border: 2px solid var(--color-border);
+  border-radius: calc(var(--radius) * 1.5);
+  padding: 10px 15px;
+  min-width: 100px;
+  max-width: 200px;
+  box-shadow: var(--shadow-md);
+  cursor: move;
+  z-index: 2;
+  transition: box-shadow 0.2s, transform 0.1s;
+  user-select: none;
+  color: var(--color-foreground);
+}
+
+.node:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.selected {
+  border-color: var(--color-ring);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-ring) 30%, transparent);
+}
+
+.rootNode {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+  font-weight: bold;
+  border-color: var(--color-primary);
+  z-index: 3;
+}
+
+.nodeContent {
+  outline: none;
+  word-break: break-word;
+  min-height: 1em;
+}
+
+.nodeContent[contenteditable="true"] {
+  background-color: color-mix(in srgb, var(--color-card) 90%, transparent);
+  padding: 2px;
+  border-radius: calc(var(--radius) / 2);
+}

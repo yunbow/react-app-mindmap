@@ -1,0 +1,16 @@
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--color-input);
+  border-radius: var(--radius);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: var(--color-card);
+  color: var(--color-foreground);
+}
+
+.input:focus {
+  border-color: var(--color-ring);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-ring) 20%, transparent);
+}
